@@ -2,19 +2,19 @@
 <head>
   <title>Canvas</title>
 </head>
-<body onload="drawFractal()">
+<body onload="updateLoc()">
 <canvas id="myCanvas" width="1920" height="1080"></canvas>
 <br>
-X: <input type="text" id="x" value="0" /><br>
-Y: <input type="text" id="y" value="0" /><br>
-Z: <input type="text" id="z" value="1" /><br>
+X: <input type="text" id="x" value="-0.77568377" /><br>
+Y: <input type="text" id="y" value="0.13646737" /><br>
+Z: <input type="text" id="z" value="8000" /><br>
 <input type="button" value="Update" onclick="updateLoc()" />
 <script>
 var gradientScale=0.25;
 var gradientTranslation=2;
-var xLoc=0.32;
-var yLoc=0.49;
-var zoom=800;
+var xLoc=0;
+var yLoc=0;
+var zoom=1;
 var BAILOUT=256;
 BAILOUT*=BAILOUT;
 var MAX_ITER=250;

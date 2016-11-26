@@ -11,10 +11,10 @@ Z: <input type="text" id="z" value="1" /><br>
 <input type="button" value="Update" onclick="updateLoc()" />
 <script>
 var gradientScale=0.25;
-var gradientTranslation=2;
-var xLoc=0.32;
-var yLoc=0.49;
-var zoom=800;
+var gradientTranslation=5;
+var xLoc=-0.77568377;
+var yLoc=0.13646737;
+var zoom=40000;
 var BAILOUT=256;
 BAILOUT*=BAILOUT;
 var MAX_ITER=250;
@@ -30,8 +30,8 @@ function updateLoc() {
 function getGradient(i) {
     var out = new Array(4);
     out[0]=Math.floor((1+Math.sin(i*gradientScale+gradientTranslation))*128);
-    out[1]=Math.floor((1+Math.cos(i*gradientScale+gradientTranslation))*128);
-    out[2]=Math.floor((1.5+Math.sin(i*gradientScale+gradientTranslation)+Math.cos(i*gradientScale+gradientTranslation))*96);
+    out[2]=Math.floor((1+Math.cos(i*gradientScale+gradientTranslation))*128);
+    out[1]=Math.floor((1.5+Math.sin(i*gradientScale+gradientTranslation)+Math.cos(i*gradientScale+gradientTranslation))*96);
     out[3]=255;
     return out;
 }

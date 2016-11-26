@@ -9,16 +9,15 @@ X: <input type="text" id="x" value="0" /><br>
 Y: <input type="text" id="y" value="0" /><br>
 Z: <input type="text" id="z" value="1" /><br>
 <input type="button" value="Update" onclick="updateLoc()" />
-<div id="stderr">Stderr:<br></div>
 <script>
 var gradientScale=0.25;
 var gradientTranslation=2;
-var xLoc=0;
-var yLoc=0;
-var zoom=1;
+var xLoc=0.32;
+var yLoc=0.49;
+var zoom=800;
 var BAILOUT=256;
 BAILOUT*=BAILOUT;
-var MAX_ITER=120;
+var MAX_ITER=250;
 var LOG2 = Math.log(2);
 
 function updateLoc() {

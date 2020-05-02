@@ -4,7 +4,6 @@ module.exports = {
     description: 'Landing site for Luke Taylor, Software Developer',
     siteUrl: 'https://LukeTaylor255.github.io',
     author: 'LukeTaylor255',
-    adsense: '',
   },
   pathPrefix: '/',
   plugins: [
@@ -30,7 +29,7 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 750,
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
               wrapperStyle: 'margin-bottom: 1.0725rem;',
             },
           },
@@ -69,20 +68,6 @@ module.exports = {
             type: 'image/png',
           },
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: '',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify',
-      options: {
-        mergeSecurityHeaders: true,
-        mergeLinkHeaders: true,
-        mergeCachingHeaders: true,
       },
     },
     'gatsby-plugin-catch-links',

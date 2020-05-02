@@ -19,7 +19,6 @@ const Template = ({ data, location }) => (
           data={get(data, 'post')}
           options={{
             isIndex: false,
-            adsense: get(data, 'site.meta.adsense'),
           }}
         />
       ) : (
@@ -38,7 +37,6 @@ export const pageQuery = graphql`
         description
         url: siteUrl
         author
-        adsense
       }
     }
     post: markdownRemark(frontmatter: { path: { eq: $path } }) {

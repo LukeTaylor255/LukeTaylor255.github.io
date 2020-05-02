@@ -34,7 +34,6 @@ export const pageQuery = graphql`
         description
         url: siteUrl
         author
-        adsense
       }
     }
     remark: allMarkdownRemark(

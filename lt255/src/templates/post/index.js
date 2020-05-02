@@ -17,7 +17,7 @@ const Post = ({ data, options }) => {
     date,
     image,
   } = data.frontmatter
-  const { isIndex, adsense } = options
+  const { isIndex } = options
   const html = get(data, 'html')
   const isMore = isIndex && !!html.match('<!--more-->')
   const fluid = get(image, 'childImageSharp.fluid')
